@@ -1,16 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import { FooterLinks } from './components/footer'
 
-function App() {
-  const [count, setCount] = useState(0)
+import '@mantine/core/styles.css';
 
-  return (
-    <>
-      <h4>hii</h4>
-    </>
-  )
+import { MantineProvider } from '@mantine/core';
+
+export default function App() {
+  return <MantineProvider>{<FooterLinks/>}</MantineProvider>;
 }
-
-export default App
