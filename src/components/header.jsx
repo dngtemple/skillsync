@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import logo1 from '../assets/logo1.png'
+import logo4 from '../assets/logo4.png'
 
 export default function Header() {
   const headerRef = useRef(null)
@@ -19,7 +20,7 @@ export default function Header() {
   return (
     <div className='fixed z-100 w-[100%] p-2 flex items-center justify-center' ref={headerRef}>
       <div className='bg-blue-200 px-2 flex w-[95%] items-center justify-between rounded-full p-1 relative'>
-        <img src={logo1} className='h-10 w-10 rounded-full' />
+        <img src={logo4} className='h-10 w-10 rounded-full' />
 
         <ul className='flex items-center justify-between gap-4 relative'>
           <li className='text-sm cursor-pointer'>Home</li>
