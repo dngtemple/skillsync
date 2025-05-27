@@ -19,13 +19,13 @@ export default function Header() {
 
   return (
     <div className='fixed z-100 w-[100%] p-2 flex items-center justify-center' ref={headerRef}>
-      <div className='bg-blue-200 px-2 flex w-[95%] items-center justify-between rounded-full p-1 relative'>
+      <div className='bg-blue-500 px-2 flex w-[95%] items-center justify-between rounded-full p-1 relative'>
         <img src={logo4} className='h-10 w-10 rounded-full' />
 
         <ul className='flex items-center justify-between gap-4 relative'>
-          <li className='text-sm cursor-pointer'>Home</li>
+          <li className='text-sm cursor-pointer font-bold'>Home</li>
           <li 
-            className='text-sm cursor-pointer relative'
+            className='text-sm cursor-pointer font-bold relative'
             onMouseEnter={() => setShowDrop(true)}
             onMouseLeave={() => setShowDrop(false)}
           >
@@ -39,12 +39,12 @@ export default function Header() {
               </ul>
             )}
           </li>
-          <li className='text-sm cursor-pointer'>About</li>
-          <li className='text-sm cursor-pointer'>Pricing</li>
+          <li className='text-sm cursor-pointer font-bold'>Pricing</li>
+          <li className='text-sm cursor-pointer font-bold'>About</li>
 
           {/* Support Dropdown */}
           <li 
-            className='text-sm cursor-pointer relative'
+            className='text-sm cursor-pointer relative font-bold'
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
           >

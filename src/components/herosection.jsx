@@ -62,10 +62,10 @@ export default function Herosection() {
         </p>
 
         <div className='w-[50%] flex justify-center items-center gap-2'>
-          <button ref={btn1Ref} className='w-[50%] bg-blue-300 text-white rounded-full p-2'>
+          <button ref={btn1Ref} className='w-[50%] bg-blue-500 text-white rounded-full p-2'>
             Get Started
           </button>
-          <button ref={btn2Ref} className='w-[50%] bg-white text-blue-300 border border-blue-300 rounded-full p-2'>
+          <button ref={btn2Ref} className='w-[50%] bg-white text-blue-500 border border-blue-500 rounded-full p-2'>
             Schedule a Demo
           </button>
         </div>
