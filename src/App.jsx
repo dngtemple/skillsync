@@ -3,6 +3,7 @@ import './App.css'
 
 import Header from  "./components/header"
 import Herosection from './components/herosection'
+import How from './components/how'
 
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
       <>
       <Header />
       <Herosection />
+      <How />
 
       </>
   )
