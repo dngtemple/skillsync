@@ -1,48 +1,53 @@
-import React from 'react'
 
-import image1 from "../assets/image1.png"
-import image2 from "../assets/image2.png"
 import image3 from "../assets/image3.png"
-import image4 from "../assets/image4.png"
-import image5 from "../assets/image5.png"
-import image6 from "../assets/image6.png"
 import image7 from "../assets/image7.png"
-import image8 from "../assets/image8.png"
 import image9 from "../assets/image9.png"
 
 export default function How() {
+  const steps = [
+    {
+      image: image9,
+      title: "Step 1",
+      description: "Create an account and set your learning goals.",
+      extra: "You’re one decision away from leveling up.",
+    },
+    {
+      image: image7,
+      title: "Step 2",
+      description: "Get matched with a supportive group.",
+      extra: "Your tribe is waiting. Let's grow together.",
+    },
+    {
+      image: image3,
+      title: "Step 3",
+      description: "Stay consistent and build habits together.",
+      extra: "Consistency beats talent every time.",
+    },
+  ];
+
   return (
-    <div className=' w-[100%] h-[100%] p-4 flex flex-col gap-20'>
-        <h1 className='text-5xl font-bold text-center'>How  Skillsync Works</h1>
+    <div className="w-full h-full px-4 py-12 flex flex-col gap-16">
+      <h1 className="text-6xl font-semibold text-center text-gray-800">
+        How SkillSync Works
+      </h1>
 
-
-        <div className='w-[95%] ml-[2.5%]   p-2 flex gap-8'>
-            <div className='w-[33%] h-[50%] p-2 border border-blue-300 flex flex-col rounded-2xl'>
-                <img src={image9} className='cover w-[100%] h-[70%]'/>
-
-                <h3 className='text-center font-bold'>Step 1</h3>
-
-                <p className='text-center text-bold'>Signup and set goals</p>
-
-            </div>
-            <div className='w-[33%] h-[50%] p-2 flex flex-col border border-blue-300 rounded-2xl'>
-                <img src={image7} className='cover w-[100%] h-[70%]'/>
-
-                <h3 className='text-center font-bold'>Step 2</h3>
-
-                <p className='text-center text-bold'>Get matched with a group</p>
-
-            </div>
-            <div className='w-[33%] h-[50%]  p-2 border border-blue-300 flex flex-col rounded-2xl'>
-                <img src={image3} className='cover w-[100%] h-[70%]'/>
-
-                <h3 className='text-center font-bold'>Step 3</h3>
-
-                <p className='text-center text-bold'>Build habits together</p>
-
-            </div>
-
-        </div>
+      <div className="w-[95%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="bg-white border border-blue-200 shadow-md rounded-2xl p-4 flex flex-col items-center transition hover:shadow-lg"
+          >
+            <img
+              src={step.image}
+              alt={step.title}
+              className="w-full h-60 object-cover rounded-xl mb-4"
+            />
+            <h3 className="text-lg font-semibold text-blue-700 mb-1">{step.title}</h3>
+            <p className="text-center text-gray-600 mb-2">{step.description}</p>
+            <p className="text-sm text-gray-500 italic text-center">{step.extra}</p>
+          </div>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
