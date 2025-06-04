@@ -1,12 +1,10 @@
-import React from 'react'
+
 import image5 from "../assets/image5.png"
 import image6 from "../assets/image6.png"
 import image7 from "../assets/image7.png"
 import image8 from "../assets/image8.png"
 
-import { Activity } from '../Icons/activity'
-import { Users } from '../Icons/users'
-import { Calendar1 } from '../Icons/calender'
+
 
 export default function Why() {
 
