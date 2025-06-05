@@ -26,7 +26,7 @@ export default function How() {
   ];
 
   return (
-    <div className="w-full h-full px-4 py-12 flex flex-col gap-16">
+    <div className=" w-[100%]  h-screen px-4 py-12 flex flex-col gap-16">
       <h1 className="text-6xl font-semibold text-center text-gray-800">
         How SkillSync Works
       </h1>

@@ -1,57 +1,84 @@
-
-import image5 from "../assets/image5.png"
-import image6 from "../assets/image6.png"
-import image7 from "../assets/image7.png"
-import image8 from "../assets/image8.png"
-
-
+import { useEffect, useRef } from "react"
+import { BsActivity, BsPeople } from "react-icons/bs"
+import { BiCalendar } from "react-icons/bi"
+import { SiStudyverse } from "react-icons/si"
+import gsap from "gsap"
 
 export default function Why() {
+  const sectionRef = useRef(null)
+  const cardRefs = useRef([])
 
-  const steps=[
+  const steps = [
     {
-      image : image5,
-      word:"Accountability",
-      phrase:"Groups"
+      image: BiCalendar,
+      word: "Accountability",
+      phrase: "Stay consistent with group support"
     },
     {
-      image : image6,
-      word:"Weekly Progress",
-      phrase:"Tracking"
+      image: BsActivity,
+      word: "Weekly Progress",
+      phrase: "Track your goals effectively"
     },
     {
-      image : image7,
-      word:"Peer Support ",
-      phrase:"System"
+      image: SiStudyverse,
+      word: "Peer Support",
+      phrase: "Learn and grow together"
     },
     {
-      image : image8,
-      word:"Flexbile Learning",
-      phrase:"Schedules"
+      image: BsPeople,
+      word: "Flexible Learning",
+      phrase: "Schedules that fit your life"
     },
   ]
 
+  useEffect(() => {
+    gsap.from(sectionRef.current, {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      ease: "power3.out"
+    })
+
+    gsap.from(cardRefs.current, {
+      opacity: 0,
+      y: 30,
+      duration: 0.8,
+      stagger: 0.2,
+      delay: 0.5,
+      ease: "power2.out"
+    })
+  }, [])
+
   return (
-    <div className='h-full  py-12 flex flex-col items-center gap-8'>
-        <h1 className='font-semibold text-6xl'>Why Choose Skillsync?</h1>
+    <section
+      ref={sectionRef}
+      className="h-screen py-16 px-6 flex flex-col items-center gap-16 bg-gradient-to-br from-white to-slate-50"
+    >
+      <div className="text-center space-y-4 max-w-2xl">
+        <h2 className="text-6xl font-semibold text-gray-900">Why Choose SkillSync?</h2>
+        <p className="text-lg text-gray-600">
+          Empower your learning journey with community, structure, and support.
+        </p>
+      </div>
 
-        <div className='h-96 w-[95%] py-4 flex gap-4'>
-            {
-                steps.map((a,i)=>{
-                    return(
-                    <div key={i} className=' h-72 gap-4  p-2 flex flex-col items-center'>
-                        <img src={a.image} className='h-60 object-cover'/>
-
-                        <h4>{a.word}</h4>
-
-                        <p>{a.phrase}</p>
-
-                    </div>    
-                    )
-                })
-            }
-
-        </div>
-    </div>
+      <div className="w-full flex flex-wrap justify-center gap-6 max-w-6xl">
+        {steps.map((a, i) => {
+          const Icon = a.image
+          return (
+            <div
+              key={i}
+              ref={(el) => (cardRefs.current[i] = el)}
+              className="w-[250px] h-[280px] p-6 bg-white rounded-2xl shadow-lg flex flex-col items-center text-center transition-transform hover:scale-105 hover:shadow-xl"
+            >
+              <div className="text-blue-600 text-5xl mb-4">
+                <Icon />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-800">{a.word}</h4>
+              <p className="text-gray-600 mt-2">{a.phrase}</p>
+            </div>
+          )
+        })}
+      </div>
+    </section>
   )
 }
