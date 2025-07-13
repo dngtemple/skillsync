@@ -31,28 +31,28 @@ export default function Why() {
     },
   ]
 
-  useEffect(() => {
-    gsap.from(sectionRef.current, {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      ease: "power3.out"
-    })
+  // useEffect(() => {
+  //   gsap.from(sectionRef.current, {
+  //     opacity: 0,
+  //     y: 50,
+  //     duration: 1,
+  //     ease: "power3.out"
+  //   })
 
-    gsap.from(cardRefs.current, {
-      opacity: 0,
-      y: 30,
-      duration: 0.8,
-      stagger: 0.2,
-      delay: 0.5,
-      ease: "power2.out"
-    })
-  }, [])
+  //   gsap.from(cardRefs.current, {
+  //     opacity: 0,
+  //     y: 30,
+  //     duration: 0.8,
+  //     stagger: 0.2,
+  //     delay: 0.5,
+  //     ease: "power2.out"
+  //   })
+  // }, [])
 
   return (
     <section
       ref={sectionRef}
-      className="h-screen py-16 px-6 flex flex-col items-center gap-16 bg-gradient-to-br from-white to-slate-50"
+      className="h-screen  py-12 px-4 flex flex-col items-center gap-20 "
     >
       <div className="text-center space-y-4 max-w-2xl">
         <h2 className="text-6xl font-semibold text-gray-900">Why Choose SkillSync?</h2>
@@ -61,16 +61,16 @@ export default function Why() {
         </p>
       </div>
 
-      <div className="w-full flex flex-wrap justify-center gap-6 max-w-6xl">
+      <div className="w-[100%] flex flex-wrap justify-center gap-6 max-w-6xl">
         {steps.map((a, i) => {
           const Icon = a.image
           return (
             <div
               key={i}
               ref={(el) => (cardRefs.current[i] = el)}
-              className="w-[250px] h-[280px] p-6 bg-white rounded-2xl shadow-lg flex flex-col items-center text-center transition-transform hover:scale-105 hover:shadow-xl"
+              className="w-[23%] h-[280px] p-4 bg-white rounded-2xl shadow-lg flex flex-col items-center text-center transition-transform hover:scale-105 hover:shadow-xl"
             >
-              <div className="text-blue-600 text-5xl mb-4">
+              <div className="text-blue-500 text-8xl mb-4">
                 <Icon />
               </div>
               <h4 className="text-xl font-semibold text-gray-800">{a.word}</h4>
