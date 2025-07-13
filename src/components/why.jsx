@@ -55,7 +55,7 @@ export default function Why() {
       className="h-screen  py-12 px-4 flex flex-col items-center gap-20 "
     >
       <div className="text-center space-y-4 max-w-2xl">
-        <h2 className="text-6xl font-semibold text-gray-900">Why Choose SkillSync?</h2>
+        <h2 className="text-6xl font-semibold text-gray-800">Why Choose SkillSync?</h2>
         <p className="text-lg text-gray-600">
           Empower your learning journey with community, structure, and support.
         </p>

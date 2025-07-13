@@ -2,11 +2,13 @@ import React from 'react';
 
 export default function Ready() {
   return (
-    <section className='h-screen w-full bg-[linear-gradient(90deg,_rgba(157, 157, 196, 1)4%,_rgba(121, 121, 166, 1)35%,_rgba(0, 212, 255, 1)100%)]'>
+    <section className='h-screen w-full bg-[linear-gradient(90deg,_rgba(157,157,196,1)_4%,_rgba(121,121,166,1)_35%,_rgba(0,212,255,1)_100%)]'>
       <div className='w-[95%] mx-auto h-full flex'>
-        <div className='w-[60%] gap-1  h-full flex flex-col justify-center'>
+        <div className='w-[60%] gap-2  h-full flex flex-col justify-center'>
             <h2 className='font-bold text-7xl '>Ready to use SkillSync?</h2>
-            <p className='text-2xl font-bold'>Learning alone? Join SkillSync. Learn faster. Stay accountable</p>
+            <p className='text-2xl font-bold'>Have questions, feedback, or partnership ideas? We’d love to hear from you.
+
+</p>
         </div>
         <div className='w-[40%] h-full flex items-center justify-center'>
             <form className=' w-[100%] h-[80%] flex flex-col justify-center gap-4 text-sm'>
