@@ -3,6 +3,8 @@ import image3 from "../assets/image3.png"
 import image7 from "../assets/image7.png"
 import image9 from "../assets/image9.png"
 
+import Hard from "./hard";
+
 export default function How() {
   const steps = [
     {
@@ -26,6 +28,7 @@ export default function How() {
   ];
 
   return (
+    <>
     <div className=" w-[100%]  h-screen px-4 py-12 flex flex-col gap-16">
       <h1 className="text-6xl font-semibold text-center text-gray-800">
         How SkillSync Works
@@ -49,5 +52,6 @@ export default function How() {
         ))}
       </div>
     </div>
+    </>
   );
 }

@@ -2,6 +2,10 @@ import { useEffect, useRef } from "react"
 import { BsActivity, BsPeople } from "react-icons/bs"
 import { BiCalendar } from "react-icons/bi"
 import { SiStudyverse } from "react-icons/si"
+import { BiBrain } from "react-icons/bi"
+import { BiRocket } from "react-icons/bi"
+import { BiNetworkChart } from "react-icons/bi"
+import { GiInspiration } from "react-icons/gi";
 import gsap from "gsap"
 
 export default function Why() {
@@ -29,6 +33,26 @@ export default function Why() {
       word: "Flexible Learning",
       phrase: "Schedules that fit your life"
     },
+    {
+      image: BiBrain,
+      word: "Faster Course Completion",
+      phrase: "Complete your online courses faster with support."
+    },
+    {
+      image: BiRocket,
+      word: "Networking Opportunities",
+      phrase: "Meet people who share your learning goals."
+    },
+    {
+      image: BiNetworkChart,
+      word: "Better Knowledge Retention",
+      phrase: "Group discussions help you understand better"
+    },
+    {
+      image :GiInspiration,
+      word: "Movitation Boost",
+      phrase: "Stay inspired by learning alongside others"
+    },
   ]
 
   // useEffect(() => {
@@ -52,7 +76,7 @@ export default function Why() {
   return (
     <section
       ref={sectionRef}
-      className="h-screen  py-12 px-4 flex flex-col items-center gap-20 "
+      className="min-h-screen pb-20 mb-6 flex flex-col items-center gap-20 "
     >
       <div className="text-center space-y-4 max-w-2xl">
         <h2 className="text-6xl font-semibold text-gray-800">Why Choose SkillSync?</h2>
@@ -61,7 +85,7 @@ export default function Why() {
         </p>
       </div>
 
-      <div className="w-[100%] flex flex-wrap justify-center gap-6 max-w-6xl">
+      <div className="w-[100%] flex flex-wrap justify-center gap-6 max-w-6xl ">
         {steps.map((a, i) => {
           const Icon = a.image
           return (

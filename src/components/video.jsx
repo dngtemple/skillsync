@@ -5,8 +5,10 @@ import vid2 from "../assets/skill.mp4"
 export default function Video() {
   return (
     <section className='h-screen w-[100%]' >
+        <h2 className="text-6xl text-center mb-6 font-semibold text-gray-800">Your Learning Accountability Partner</h2>
         
-        <video src={vid2} autoPlay playsInline muted  loop  className='h-[100%] w-[100%] border-blue-500'/>
+        
+        <video src={vid2} autoPlay playsInline muted  loop  className='h-[85%]  w-[100%] border-blue-500'/>
 
     </section>
   )
