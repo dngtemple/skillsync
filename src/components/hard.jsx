@@ -1,13 +1,13 @@
 import React from 'react'
-import Sad from "../assets/sad.jpg"
-import Happy from "../assets/happy.jpg"
+import Sad from "../assets/image10.png"
+import Happy from "../assets/image6.png"
 
 export default function Hard() {
   return (
     <section className='min-h-screen  w-[100%] flex'>
         <div className='w-[40%] flex flex-col items-center'>
             <img src={Sad} className='h-[40%] '/>
-            <img src={Happy} className='h-[30%]' />
+            <img src={Happy} className='h-[40%]' />
         </div>
 
         <div className='w-[60%] h-screen flex flex-col gap-2 justify-center items-start p-8'>

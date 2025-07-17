@@ -7,7 +7,7 @@ import { BiRocket } from "react-icons/bi"
 import { BiNetworkChart } from "react-icons/bi"
 import { GiInspiration } from "react-icons/gi";
 import gsap from "gsap"
-
+import Happy from "../assets/happy.jpg"
 export default function Why() {
   const sectionRef = useRef(null)
   const cardRefs = useRef([])
@@ -74,9 +74,9 @@ export default function Why() {
   // }, [])
 
   return (
-    <section
+    <section style={{backgroundImage: `url(${Happy})`}}
       ref={sectionRef}
-      className="min-h-screen pb-20 mb-6 flex flex-col items-center gap-20 "
+      className="min-h-screen bg-cover pb-20 mb-6 flex flex-col items-center gap-20 "
     >
       <div className="text-center space-y-4 max-w-2xl">
         <h2 className="text-6xl font-semibold text-gray-800">Why Choose SkillSync?</h2>

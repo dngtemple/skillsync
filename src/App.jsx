@@ -17,8 +17,8 @@ export default function App() {
       <Header />
       <Herosection />
       <How />
-      <Hard />
       <Why />
+      <Hard />
       <Video/>
       <Ready />
 
