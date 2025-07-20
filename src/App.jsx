@@ -8,6 +8,7 @@ import Why from './components/why'
 import Ready from './components/ready'
 import Video from './components/video'
 import Hard from './components/hard'
+import Footer from './components/footer'
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
       <Hard />
       <Video/>
       <Ready />
+      <Footer />
 
 
       </>

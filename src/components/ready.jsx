@@ -6,7 +6,10 @@ export default function Ready() {
       <div className=' w-[95%] mx-auto h-full flex '>
         <div  style={{backgroundImage:`url(${Happy})`}} className='w-[60%] gap-2  bg-center h-full flex flex-col justify-center'>
             <h2 className='font-bold text-7xl '>Ready to use SkillSync?</h2>
-            <p className='text-2xl font-bold'>Have questions, feedback, or partnership ideas? We’d love to hear from you.</p>
+            <p className='text-xl font-bold'>Have questions, feedback, or partnership ideas? We'd love to hear from you!
+Fill out the form and our team will get back to you as soon as possible.
+
+Whether you're a learner with suggestions, an organization interested in collaboration, or just curious about SkillSync, we're here to help..</p>
         </div>
         <div className='w-[40%] h-full flex items-center justify-center'>
             <form className=' w-[100%] h-[80%] flex flex-col justify-center gap-4 text-sm'>

@@ -5,9 +5,9 @@ import Happy from "../assets/image6.png"
 export default function Hard() {
   return (
     <section className='min-h-screen  w-[100%] flex'>
-        <div className='w-[40%] flex flex-col items-center'>
-            <img src={Sad} className='h-[40%] '/>
-            <img src={Happy} className='h-[40%]' />
+        <div className='w-[40%] flex flex-col items-center justify-center'>
+            <img src={Sad} className='h-[30%] bg-cover '/>
+            <img src={Happy} className='h-[30%] bg-cover' />
         </div>
 
         <div className='w-[60%] h-screen flex flex-col gap-2 justify-center items-start p-8'>
