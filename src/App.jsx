@@ -9,6 +9,7 @@ import Ready from './components/ready'
 import Video from './components/video'
 import Hard from './components/hard'
 import Footer from './components/footer'
+import Testimonials from './components/testimonials'
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
       <Why />
       <Hard />
       <Video/>
+      <Testimonials />
       <Ready />
       <Footer />
 
