@@ -37,7 +37,6 @@ export default function Testimonial() {
     { name: "Koomson", avatar: Ava2, quote: "SkillSync has the best community for learners." },
     { name: "Gorge", avatar: Ava1, quote: "I recommend SkillSync to anyone looking to upskill." },
     { name: "Pienel", avatar: Ava3, quote: "The variety of courses available is impressive." },
-    { name: "Oduro", avatar: Ava2, quote: "SkillSync helped me achieve my career goals." }
   ];
 
   return (
